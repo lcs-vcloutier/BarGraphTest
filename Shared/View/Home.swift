@@ -102,7 +102,7 @@ struct Home: View {
             .padding(.vertical,20)
             
             //Bar Graph w/ Gestures
-            BarGraph(downloads: weekDownloads)
+            BarGraph(downloads: weekDownloads) 
         }
         .padding(15)
         .background(
