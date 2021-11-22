@@ -25,7 +25,7 @@ struct Home: View {
                     
                     Spacer()
                     Button {
-                        
+                        //Action goes here
                     } label: {
                         Image("Profile")
                             .resizable()
@@ -63,13 +63,54 @@ struct Home: View {
                         }
                         .font(.callout)
                         .foregroundColor(.gray)
-
+                        
                         
                     }
                 }
                 Spacer()
+                Button {
+                    //Action goes here
+                } label: {
+                    Image(systemName: "arrow.up.forward")
+                        .font(.title2.bold())
+                }
+                .foregroundColor(.white)
+                .offset(y: -10)
+                
             }
+            
+            HStack {
+                Text("12.85$")
+                    .font(.largeTitle.bold())
+                
+                Spacer()
+                Button {
+                    //ACTION GOES HERE
+                } label: {
+                    Text("Download")
+                        .font(.callout)
+                        .foregroundColor(.white)
+                        .padding(.vertical,10)
+                        .padding(.horizontal)
+                        .background(
+                            RoundedRectangle(cornerRadius: 10)
+                                .fill(Color("BG"))
+                        )
+                }
+                
+            }
+            .padding(.vertical,20)
+            
+            //Bar Graph w/ Gestures
+            BarGraph(downloads: weekDownloads)
         }
+        .padding(15)
+        .background(
+            RoundedRectangle(cornerRadius: 20)
+                .fill(Color.black)
+        )
+        .padding(.vertical,20)
+        
     }
 }
 

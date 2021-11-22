@@ -17,6 +17,8 @@
 		92797765274C55B9007475DE /* Download.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92797763274C55B9007475DE /* Download.swift */; };
 		92797767274C56F4007475DE /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92797766274C56F4007475DE /* Home.swift */; };
 		92797768274C56F4007475DE /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92797766274C56F4007475DE /* Home.swift */; };
+		9279776A274C6076007475DE /* BarGraph.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92797769274C6076007475DE /* BarGraph.swift */; };
+		9279776B274C6076007475DE /* BarGraph.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92797769274C6076007475DE /* BarGraph.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,7 @@
 		92797752274C54C5007475DE /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
 		92797763274C55B9007475DE /* Download.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Download.swift; sourceTree = "<group>"; };
 		92797766274C56F4007475DE /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
+		92797769274C6076007475DE /* BarGraph.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarGraph.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +101,7 @@
 			isa = PBXGroup;
 			children = (
 				92797766274C56F4007475DE /* Home.swift */,
+				92797769274C6076007475DE /* BarGraph.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -200,6 +204,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9279776A274C6076007475DE /* BarGraph.swift in Sources */,
 				92797755274C54C5007475DE /* ContentView.swift in Sources */,
 				92797753274C54C5007475DE /* BarGraphGesturesApp.swift in Sources */,
 				92797767274C56F4007475DE /* Home.swift in Sources */,
@@ -211,6 +216,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9279776B274C6076007475DE /* BarGraph.swift in Sources */,
 				92797756274C54C5007475DE /* ContentView.swift in Sources */,
 				92797754274C54C5007475DE /* BarGraphGesturesApp.swift in Sources */,
 				92797768274C56F4007475DE /* Home.swift in Sources */,
