@@ -13,6 +13,8 @@
 		92797756274C54C5007475DE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92797744274C54C3007475DE /* ContentView.swift */; };
 		92797757274C54C5007475DE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 92797745274C54C5007475DE /* Assets.xcassets */; };
 		92797758274C54C5007475DE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 92797745274C54C5007475DE /* Assets.xcassets */; };
+		92797764274C55B9007475DE /* Download.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92797763274C55B9007475DE /* Download.swift */; };
+		92797765274C55B9007475DE /* Download.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92797763274C55B9007475DE /* Download.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,7 @@
 		9279774A274C54C5007475DE /* BarGraphGestures.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BarGraphGestures.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		92797750274C54C5007475DE /* BarGraphGestures.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BarGraphGestures.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		92797752274C54C5007475DE /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
+		92797763274C55B9007475DE /* Download.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Download.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +57,8 @@
 		92797742274C54C3007475DE /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				92797762274C559E007475DE /* View */,
+				92797761274C559A007475DE /* Model */,
 				92797743274C54C3007475DE /* BarGraphGesturesApp.swift */,
 				92797744274C54C3007475DE /* ContentView.swift */,
 				92797745274C54C5007475DE /* Assets.xcassets */,
@@ -76,6 +81,21 @@
 				92797752274C54C5007475DE /* macOS.entitlements */,
 			);
 			path = macOS;
+			sourceTree = "<group>";
+		};
+		92797761274C559A007475DE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				92797763274C55B9007475DE /* Download.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		92797762274C559E007475DE /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -178,6 +198,7 @@
 			files = (
 				92797755274C54C5007475DE /* ContentView.swift in Sources */,
 				92797753274C54C5007475DE /* BarGraphGesturesApp.swift in Sources */,
+				92797764274C55B9007475DE /* Download.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -187,6 +208,7 @@
 			files = (
 				92797756274C54C5007475DE /* ContentView.swift in Sources */,
 				92797754274C54C5007475DE /* BarGraphGesturesApp.swift in Sources */,
+				92797765274C55B9007475DE /* Download.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
