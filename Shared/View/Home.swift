@@ -50,7 +50,7 @@ struct Home: View {
         VStack(spacing:15) {
             HStack {
                 VStack(alignment: .leading, spacing: 13) {
-                    Text("Ads Expense")
+                    Text("3 Pointers")
                         .font(.title)
                         .fontWeight(.semibold)
                     Menu {
@@ -59,7 +59,7 @@ struct Home: View {
                         Label {
                             Image(systemName: "chevron.down")
                         } icon: {
-                            Text("Last 7 Days")
+                            Text("Last 7 Games")
                         }
                         .font(.callout)
                         .foregroundColor(.gray)
@@ -80,7 +80,7 @@ struct Home: View {
             }
             
             HStack {
-                Text("12.85$")
+                Text("36.7%")
                     .font(.largeTitle.bold())
                 
                 Spacer()
