@@ -18,13 +18,51 @@ struct BarGraph: View {
     @State var currentDownloadId: String = ""
     
     var body: some View {
-
+        
         HStack(spacing: 10) {
             ForEach(downloads) { download in
-            CardView(download: download)
+                CardView(download: download)
             }
         }
         .frame(height: 150)
+        .animation(.easeOut, value: isDragging)
+        // Actual Gesture
+        .gesture(
+            DragGesture()
+                .updating($isDragging, body: {  _, out, _ in
+                    out = true
+                })
+                .onChanged({ value in
+                    // Only updating if dragged
+                    offset = isDragging ? value.location.x : 0
+                    
+                    // The next three lines measure which block the user's drag is touching
+                    // Remove total padding (60) from draggingSpace
+                    let draggingSpace = UIScreen.main.bounds.width - 60
+                    
+                    //getting each block
+                    let eachBlock = draggingSpace / CGFloat(downloads.count)
+                    
+                    //Getting index
+                    let temp = Int(offset / eachBlock)
+                    
+                    //safe wrap index
+                    let index = max(min(temp, downloads.count - 1), 0)
+                    
+                    //update id
+                    self.currentDownloadId = downloads[index].id
+                 
+                    
+                })
+                .onEnded({ value in
+                    withAnimation {
+                        offset = .zero
+                        currentDownloadId = ""
+                    }
+                })
+
+            
+        )
     }
     
     @ViewBuilder
@@ -43,7 +81,7 @@ struct BarGraph: View {
                 .foregroundColor(currentDownloadId == download.id ? download.color : .gray)
         }
     }
-     
+    
     // Get each download's height
     func getMax() -> CGFloat {
         let max = downloads.max { first, second in
