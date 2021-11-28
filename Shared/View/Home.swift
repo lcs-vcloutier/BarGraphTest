@@ -102,12 +102,13 @@ struct Home: View {
             .padding(.vertical,20)
             
             //Bar Graph w/ Gestures
-            BarGraph(downloads: weekDownloads) 
+            BarGraph(downloads: weekDownloads)
+                .padding(.top,25)
         }
         .padding(15)
         .background(
             RoundedRectangle(cornerRadius: 20)
-                .fill(Color.black)
+                .fill(Color.black) 
         )
         .padding(.vertical,20)
         

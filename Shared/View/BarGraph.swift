@@ -74,6 +74,15 @@ struct BarGraph: View {
                     .fill(download.color)
                     .opacity(isDragging ? (currentDownloadId == download.id ? 1 : 0.35) : 1)
                     .frame(height: (download.downloads / getMax()) * (size.height))
+                    .overlay(
+                        Text("\(Int(download.downloads))")
+                            .font(.callout)
+                            .foregroundColor(download.color)
+                            .opacity(isDragging && currentDownloadId == download.id  ? 1 : 0)
+                            .offset(y: -30)
+                        ,alignment: .top
+                         
+                    )
                     .frame(maxHeight: .infinity, alignment: .bottom)
             }
             Text(download.day)
